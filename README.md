@@ -3,7 +3,7 @@
 Project for the little spare time I have.<br>
 Bug-it will be a bug tracker for projects and or anything else one desires to use it for.
 
-**Frontend:** React / Next.Js <br>
+**Frontend:** Next.JS <br>
 
 ETA of completion: Late 2021.
 
