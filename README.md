@@ -26,6 +26,3 @@ ETA of completion: Late 2021.
 | P2 | Helps the program function better |
 | P3 | Will do after all else |
 | P4 | Nice-to-have, will do at some point |
-
-# Mockup
-Mockup can be viewed at: [Figma mockup tool](https://www.figma.com/file/bk4hP8W5uOanNY6ANlQ9AD/Bug-It?node-id=2%3A8)
