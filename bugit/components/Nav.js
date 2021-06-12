@@ -6,7 +6,7 @@ const Nav = () => {
         <nav className={navStyles.nav}>
             <ul>
                 <li className={navStyles.logo}>
-                    Bugit
+                    🐛 Bugit
                 </li>
                 <li>
                     <Link href='/'>Home</Link>
