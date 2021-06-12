@@ -6,7 +6,7 @@ const ProjectItem = ({project}) => {
         <Link href={`/project/${project.id}`}>
             <a className={projectStyles.card}>
                 <h3>{project.title} &rarr;</h3>
-                <p>{project.body}</p>
+                <p>{project.excerpt}</p>
             </a>
         </Link>
     );
