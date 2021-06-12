@@ -7,11 +7,11 @@ const project = ({project}) => {
     return (
         <>
           <Meta title={project.title}/>
-        <h1>{project.title}</h1>
-        <p>{project.body}</p>
-        <br />
-        <Link href='/projects'>Go back</Link>
-    </>
+          <h1>{project.title}</h1>
+          <p>{project.body}</p>
+          <br />
+          <Link href='/projects'>Go back</Link>
+        </>
     )
 }
 
