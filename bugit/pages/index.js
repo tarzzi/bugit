@@ -1,18 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Layout.module.scss'
+import Meta from '../components/Meta'
 
-export default function Home({articles}) {
+export default function Home() {
   return (
       <div>
-          <Head>
-              <title>Bugit</title>
-              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          </Head>
-          <div>
-              <h1>Bugit</h1>
-              <p>Track ur bugs its fun I promis</p>
-          </div>
+        <Meta />
+        <h1>Bugit </h1><span>Track ur bugs its fun I promis</span>
+        <h1>Hello [user.username]</h1>
+        <h3>You have [user.issues.count] to be resolved</h3>
       </div>
   )
 }
