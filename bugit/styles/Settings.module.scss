@@ -1,0 +1,19 @@
+.list {
+  height: 50px;
+  padding: 10px;
+  color: #000000;
+  align-items: center;
+  list-style: none;
+}
+
+.list ul {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.list ul li a {
+  margin: 2rem 0;
+}
