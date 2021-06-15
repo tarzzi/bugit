@@ -26,3 +26,8 @@ ETA of completion: Late 2021.
 | P2 | Helps the program function better |
 | P3 | Will do after all else |
 | P4 | Nice-to-have, will do at some point |
+  
+  
+  
+  
+ <img src="https://external-preview.redd.it/JeXzjGuHaHw5n6M7FowA7Ah7KhGhn0SEY8Koh7vCYoA.jpg?auto=webp&s=7eed85969beb822b742000e7b435e08a35657f0f" alt="What it feels like to do this" width="400"/>
