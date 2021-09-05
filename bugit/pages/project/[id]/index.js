@@ -7,9 +7,9 @@ const project = ({project}) => {
 
     return (
         <>
-          <Meta title={project.title}/>
+          <Meta title={project.name}/>
           <div className={projStyles.content}>
-            <h1>{project.title}</h1>
+            <h1>{project.name}</h1>
             <p>{project.body}</p>
           </div>
           <br />
@@ -20,7 +20,7 @@ const project = ({project}) => {
 
 
 export const getStaticProps = async (context) => {
-  const res = await fetch(`${server}/api/projects/${context.params.id}`)
+  const res = await fetch(`https://jsonplaceholder.typicode.com/comments/${context.params.id}`)
 
   const project = await res.json()
 
@@ -32,7 +32,7 @@ export const getStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`${server}/api/projects`)
+  const res = await fetch(`https://jsonplaceholder.typicode.com/comments`)
 
   const projects = await res.json()
 

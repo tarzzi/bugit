@@ -5,8 +5,8 @@ const ProjectItem = ({project}) => {
     return (
         <Link href={`/project/${project.id}`}>
             <a className={projectStyles.card}>
-                <h3>{project.title} &rarr;</h3>
-                <p>{project.excerpt}</p>
+                <h3>{project.name} &rarr;</h3>
+                <p>{project.description}</p>
             </a>
         </Link>
     );

@@ -4,7 +4,7 @@ const Header = () => {
     return(
         <div>
             <h1 className={headerStyles.title}>
-                Header
+                BugIT
             </h1>
         </div>
     )

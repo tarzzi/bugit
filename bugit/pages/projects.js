@@ -13,15 +13,16 @@ const projects = ({ projects }) => {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/projects`)
+  const res = await fetch(`https://jsonplaceholder.typicode.com/comments`)
   const projects = await res.json()
-
   return {
     props: {
       projects,
     },
   }
+
 }
 
 export default projects
 
+/* await fetch( ${server}/api/projects ) */
