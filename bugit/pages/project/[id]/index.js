@@ -1,43 +1,48 @@
+import {server} from '../../../config';
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import Meta from '../../../components/Meta'
+import projStyles from '../../../styles/Projects.module.scss'
 
 const project = ({project}) => {
 
     return (
         <>
-        <h1>{project.title}</h1>
-        <p>{project.body}</p>
-        <br />
-        <Link href='/projects'>Go back</Link>
-    </>
+          <Meta title={project.name}/>
+          <div className={projStyles.content}>
+            <h1>{project.name}</h1>
+            <p>{project.body}</p>
+          </div>
+          <br />
+          <Link href='/projects'>Go back</Link>
+        </>
     )
 }
- export const getStaticProps = async (context) => {
-   const res = await fetch(
-     `https://jsonplaceholder.typicode.com/posts/${context.params.id}`
-   )
 
-   const project = await res.json()
 
-   return {
-     props: {
-       project,
-     },
-   }
- }
+export const getStaticProps = async (context) => {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/comments/${context.params.id}`)
 
- export const getStaticPaths = async () => {
-   const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
+  const project = await res.json()
 
-   const projects = await res.json()
+  return {
+    props: {
+      project,
+    },
+  }
+}
 
-   const ids = projects.map((project) => project.id)
-   const paths = ids.map((id) => ({ params: { id: id.toString() } }))
+export const getStaticPaths = async () => {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/comments`)
 
-   return {
-     paths,
-     fallback: false,
-   }
- }
+  const projects = await res.json()
+
+  const ids = projects.map((project) => project.id)
+  const paths = ids.map((id) => ({ params: { id: id.toString() } }))
+
+  return {
+    paths,
+    fallback: false,
+  }
+}
 
 export default project
